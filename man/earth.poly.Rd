@@ -10,14 +10,12 @@ earth.poly(x, plot.map = FALSE, ...)
 }
 
 \arguments{
-  \item{x}{a table with a latitude and longitude column respectively as the 
-  first two columns}
-  \item{plot.map} {A logical argument whether to plot the points on a map; default is FALSE} 
-  \item{\dots}{plotting arguments to be passed to the map plotting function; 
-  will be ignored if \code{plot.map}=FALSE}
+\item{x}{a table with a latitude and longitude column respectively as the first two columns}
+\item{plot.map}{A logical argument whether to plot the points on a map; default is FALSE} 
+\item{\dots}{plotting arguments to be passed to the map plotting function; will be ignored if \code{plot.map}=FALSE}
 }
 \details{
-  This function will plot a 
+  This function will plot a minimum convex polygon for a spherical surface (ie points on a globe)
 }
 \value{
   ~Describe the value returned
@@ -28,8 +26,7 @@ earth.poly(x, plot.map = FALSE, ...)
 }
 \references{ ~put references to the literature/web site here ~ }
 \author{Matthew Vavrek}
-\note{
-}
+\note{}
 \seealso{\code{\link{earth.tri}}}
 \examples{
 ##add example

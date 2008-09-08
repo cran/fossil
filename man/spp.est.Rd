@@ -56,8 +56,9 @@ Returns a table with the following column names if \code{abund=FALSE}:
 }
 \references{
   The original idea for a program similar to this came from the 
-  extremely useful EstimateS program by Robert K. Colwell:
-  \newline Colwell, R. K. 2005. EstimateS: Statistical estimation of species 
+  extremely useful EstimateS program by Robert K. Colwell
+
+  Colwell, R. K. 2005. EstimateS: Statistical estimation of species 
   richness and shared species from samples. Version 7.5. User's Guide and 
   application published at: http://purl.oclc.org/estimates.
 }

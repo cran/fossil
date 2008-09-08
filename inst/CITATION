@@ -1,0 +1,18 @@
+citHeader("To cite package 'fossil' in publications use:")
+
+desc <- packageDescription("fossil")
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", desc$Date)
+vers <- paste("R package version", desc$Version)
+
+citEntry(entry="Manual",
+         title = "fossil: Palaeoecological and Palaeogeographical Analysis Tools",
+         author = personList(as.person("Matthew Vavrek")),
+         year = year,
+         note = vers,
+
+         textVersion =
+         paste("Matthew Vavrek (",
+               year,
+               "). fossil: Palaeoecological and Palaeogeographical Analysis Tools. ",
+               vers, ".", sep=""))
+

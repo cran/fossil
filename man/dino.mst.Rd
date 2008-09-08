@@ -22,7 +22,9 @@ dino.msn(x)
   Returns a binary matrix where connections between points are denoted by a 1.
 }
 \references{ ~put references to the literature/web site here ~ }
-\author{Matthew Vavrek}
+\author{
+Yvonnick Noel, Julien Claude and Emmanuel Paradis with modifications from Matthew Vavrek
+}
 \seealso{\code{\link{dino.dist}}}
 \examples{
 ##add example
