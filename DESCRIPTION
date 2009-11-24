@@ -1,7 +1,7 @@
 Package: fossil
 Type: Package
 Title: Palaeoecological and Palaeogeographical Analysis Tools
-Version: 0.2.2
+Version: 0.2.3
 Date: 2009-11-24
 Author: Matthew Vavrek <matthew@matthewvavrek.com>
 Maintainer: Matthew Vavrek <matthew@matthewvavrek.com>
@@ -15,6 +15,6 @@ Description: A set of analytical tools useful in analysing ecological
         areas.
 License: GPL (>= 2)
 URL: http://matthewvavrek.com
-Packaged: 2009-11-25 20:33:18 UTC; matthew
+Packaged: 2009-12-12 06:05:08 UTC; matthew
 Repository: CRAN
-Date/Publication: 2009-11-26 08:12:30
+Date/Publication: 2009-12-13 09:46:32
