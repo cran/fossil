@@ -20,7 +20,7 @@
 }
 \details{
   This function will create a location table with latitude (Y) and longitude (X)
-  for every location
+  for every location. This function ceates a matrix in the format needed for most of the geographic functions found in the fossil package.
 }
 \value{
   A matrix with a column of latitude and longitude, respectively with rownames
@@ -30,12 +30,6 @@
 \author{Matthew Vavrek}
 \seealso{\code{\link{create.matrix}}}
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-
 }
 
 \keyword{data}

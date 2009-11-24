@@ -1,10 +1,10 @@
 Package: fossil
 Type: Package
 Title: Palaeoecological and Palaeogeographical Analysis Tools
-Version: 0.2.1
-Date: 2008-09-08
-Author: Matthew Vavrek <matthew.vavrek@gmail.com>
-Maintainer: Matthew Vavrek <matthew.vavrek@gmail.com>
+Version: 0.2.2
+Date: 2009-11-24
+Author: Matthew Vavrek <matthew@matthewvavrek.com>
+Maintainer: Matthew Vavrek <matthew@matthewvavrek.com>
 Depends: shapefiles
 Suggests: maps
 Description: A set of analytical tools useful in analysing ecological
@@ -14,8 +14,7 @@ Description: A set of analytical tools useful in analysing ecological
         diversity, species area curves and geographic distances and
         areas.
 License: GPL (>= 2)
-URL:
-        http://redpath-staff.mcgill.ca/larsson/personalpages/matthew_vavrek/matthew_vavrek.htm
-Packaged: Sun Apr 5 17:35:36 2009; matthew
+URL: http://matthewvavrek.com
+Packaged: 2009-11-25 20:33:18 UTC; matthew
 Repository: CRAN
-Date/Publication: 2009-04-14 17:30:00
+Date/Publication: 2009-11-26 08:12:30

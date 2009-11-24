@@ -22,7 +22,7 @@ earth.bear(lat1, long1, lat2, long2)
 \value{
   Returns a value in degrees from True North between two geographic points.
 }
-\references{ ~put references to the literature/web site here ~ }
+\references{Haversine formula from Math Forums: Ask Dr. Math at http://mathforum.org/dr.math/}
 \author{Matthew Vavrek}
 \seealso{\code{\link{earth.poly}}}
 \examples{

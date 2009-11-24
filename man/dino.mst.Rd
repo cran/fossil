@@ -16,12 +16,11 @@ dino.msn(x)
   \item{random.search}{If there is more than one shortest possible branch, should one be chosen randomly}
 }
 \details{
-  ~~ If necessary, more details than the description above ~~
+  Ensure that a distance matrix is used, and not a similarity matrix, otherwise the result given will be highly incorrect.
 }
 \value{
   Returns a binary matrix where connections between points are denoted by a 1.
 }
-\references{ ~put references to the literature/web site here ~ }
 \author{
 Yvonnick Noel, Julien Claude and Emmanuel Paradis with modifications from Matthew Vavrek
 }

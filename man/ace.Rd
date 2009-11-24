@@ -29,7 +29,7 @@ ICE(x, taxa.row = TRUE)
 }
 \value{
   A value representing a minimum number of species present in the assemblage if 
-  the entire population was censused.
+  the entire population were to be censused.
 }
 \references{
 Chao, A., M.-C. Ma, & M. C. K. Yang. 1993. Stopping rules and estimation for 

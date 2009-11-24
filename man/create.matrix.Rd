@@ -34,18 +34,12 @@
   will not work if you have chosen to include abundances (\code{abund = TRUE} 
   but the name of the abundance column is incorrect.}
 \value{
-  A 
+  A matrix of taxa (rows) by localities (columns).
 }
-\references{ ~put references to the literature/web site here ~ }
+\note{
+At present, the function will ignore rows where the taxon name is \code{NA}, \code{NULL}, \code{''} (empty character value) or \code{' '} (single space), as these labels typically represent an unknown taxa, which would be inappropriate to include in most analyses.} 
 \author{Matthew Vavrek}
 \seealso{\code{\link{create.lats}}}
-\examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-
-}
+\examples{}
 
 \keyword{data}

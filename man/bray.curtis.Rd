@@ -14,8 +14,7 @@ jaccard(x, y)
 morisita.horn(x, y)
 simpson(x, y)
 sorenson(x, y)
-}
-%- maybe also 'usage' for other objects documented here.
+}
 \arguments{
   \item{x}{species from group A}
   \item{y}{species from group B}

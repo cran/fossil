@@ -1,8 +1,8 @@
 citHeader("To cite package 'fossil' in publications use:")
 
 desc <- packageDescription("fossil")
-year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", desc$Date)
-vers <- paste("R package version", desc$Version)
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
+vers <- paste("R package version", meta$Version)
 
 citEntry(entry="Manual",
          title = "fossil: Palaeoecological and Palaeogeographical Analysis Tools",
@@ -15,4 +15,5 @@ citEntry(entry="Manual",
                year,
                "). fossil: Palaeoecological and Palaeogeographical Analysis Tools. ",
                vers, ".", sep=""))
+
 

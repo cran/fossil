@@ -13,7 +13,8 @@ nm<-matrix(0,nr,nc,dimnames=list(rn,cn))
 for (i in 1:length(x[,1])) {
   m<-as.character(x[i,a])
   n<-as.character(x[i,z])
-  if (is.na(m)==TRUE | is.na(n)==TRUE) next (i)
+  if (is.na(m)==TRUE | is.null(m)==TRUE | is.na(n)==TRUE | is.null(n)==TRUE) next (i)
+  if (m=='' | m==' ' | n=='' | n==' ') next (i)
   if (abund==TRUE) nm[m,n]<-nm[m,n]+x[i,abund.col]
   else nm[m,n]<-1
   }
