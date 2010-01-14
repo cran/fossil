@@ -32,6 +32,11 @@ chao.jaccard(x, y)
 \author{Matthew Vavrek}
 \seealso{\code{\link{bray.curtis}}}
 \examples{
-##add examples
+##Species counts from two different locations
+a <- c(1,0,4,3,5,0,0,7)
+b <- c(2,1,3,0,0,1,0,6)
+chao.sorenson(a,b)
+chao.jaccard(a,b)
+
 }
 \keyword{manip}

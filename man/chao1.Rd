@@ -30,6 +30,18 @@ chao2(x, taxa.row = TRUE)
 \author{Matthew Vavrek}
 \seealso{\code{\link{jack1}}, \code{\link{bootstrap}}}
 \examples{
-##add examples
+## sample vector
+a<-c(0,5,1,1,2,0,0,1,0,0,8,45)
+chao1(a)
+
+## matrix format
+a<-matrix(c(0,5,1,1,2,0,0,1,0,0,8,45),4,3)
+chao1(a)
+chao2(a)
+
+## presence absence matrix
+a<-matrix(c(0,1,1,1,1,0,0,1,0,0,1,1),4,3)
+chao1(a)
+chao2(a)
 }
 \keyword{manip}

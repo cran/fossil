@@ -6,7 +6,7 @@
   estimators.
 }
 \usage{
-spp.est(x, rand = 10, abund = TRUE, counter = TRUE)
+spp.est(x, rand = 10, abund = TRUE, counter = FALSE)
 }
 \arguments{
   \item{x}{A vector, matrix or data frame with species as rows and 
@@ -68,9 +68,18 @@ Returns a table with the following column names if \code{abund=FALSE}:
   randomizations are initially set to 10 so the process will run relatively 
   quickly, but a low value for randomizations will not give nicely smoothed 
   curves.
+
+Also, in some cases due to the nature of some of the functions, they provide no answer, such as is common with the Chao standard deviation. In this case, the Chao upper and lower bounds are simply 95\% confidence intervals based on the actual Chao estimator.
 }
 \seealso{\code{\link{chao1}}, \code{\link{jack1}}, \code{\link{bootstrap}}}
 \examples{
-##add examples
+#abundance example with sample data set
+data(sppexample)
+spp.est(sppexample, abund = TRUE, counter = FALSE)
+
+#occurrence example with sample data set
+data(sppexample)
+spp.est(sppexample, abund = FALSE, counter = FALSE)
+
 }
 \keyword{datagen}

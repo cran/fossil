@@ -11,7 +11,7 @@ dino.dist(x, method = "sorenson", type = "dis")
   \item{x}{matrix of taxa (or equivalent data) in rows by columns of localities 
   (or equivalent)}
   \item{method}{the distance/similarity index to compute}
-  \item{type}{if the matrix is to be a distance or similarity matrix}
+  \item{type}{if the matrix is to be a distance ('dis') or similarity ('sim) matrix}
 }
 \details{
   This will create a distance (or similarity) matrix using any of the provided 
@@ -25,7 +25,6 @@ dino.dist(x, method = "sorenson", type = "dis")
   A distance matrix (lower triangle) giving the pairwise distance indices 
   between all points. 
 }
-\references{ ~put references to the literature/web site here ~ }
 \author{Matthew Vavrek}
 \note{                                
  To use a user generated distance index, type the name of the function to be 
@@ -37,10 +36,10 @@ dino.dist(x, method = "sorenson", type = "dis")
   \code{\link{bray.curtis}}, \code{\link{jaccard}}, \code{\link{morisita.horn}},
   \code{\link{chao.jaccard}} and \code{\link{chao.sorenson}}}
 \examples{
-##Sample matrix of 3 locations with 3 taxa
-a <- matrix(c(0,2,1,3,0,1,0,3,0),3,3)
-dino.dist(a)
-dino.dist(a,simpson,"sim")
+##example using sppexample
+data(sppexample)
+dino.dist(sppexample)
+dino.dist(sppexample,simpson,"sim")
 
 }
 \keyword{manip}

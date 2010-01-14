@@ -45,12 +45,12 @@ Chazdon, R. L., R. K. Colwell, J. S. Denslow, & M. R. Guariguata. 1998.
   and modeling: Conceptual background and Old World case studies. Parthenon
   Publishing, Paris.}
 \author{Matthew Vavrek, with recommendations from the EstimateS reference manual by R.K. Colwell}
-\seealso{For related species estimators, see \code{\link{chao1}}, \code{\link{bootstrap}} and \code{\link{jack1}}}
+\seealso{For related species estimators, see \code{\link{chao1}}, \code{\link{bootstrap}} and \code{\link{jack1}}, and \code{\link{spp.est}} to calculate multiple indices at once.}
 \examples{
 ## sample vector
 a<-c(0,5,1,1,2,0,0,1,0,0,8,45)
 ACE(a)
-ICE(a)
+
 
 ## matrix format
 a<-matrix(c(0,5,1,1,2,0,0,1,0,0,8,45),4,3)

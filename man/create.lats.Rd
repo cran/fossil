@@ -26,7 +26,6 @@
   A matrix with a column of latitude and longitude, respectively with rownames
   correspnding to each location
 }
-\references{ ~put references to the literature/web site here ~ }
 \author{Matthew Vavrek}
 \seealso{\code{\link{create.matrix}}}
 \examples{

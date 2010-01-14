@@ -22,7 +22,7 @@ deg.dist(lat1, long1, lat2, long2)
 \value{
   Arc distance between two points on the Earth's surface in kilometers.
 }
-\references{ ~put references to the literature/web site here ~ }
+\references{The formulas for the Haversine distance function were taken from the Dr. Math website at \url{http://mathforum.org/library/drmath/view/55417.html}}
 \author{Matthew Vavrek}
 \note{
   The distance calculated may be up to 0.2\% inaccurate, as this function 
