@@ -40,6 +40,15 @@
 At present, the function will ignore rows where the taxon name is \code{NA}, \code{NULL}, \code{''} (empty character value) or \code{' '} (single space), as these labels typically represent an unknown taxa, which would be inappropriate to include in most analyses.} 
 \author{Matthew Vavrek}
 \seealso{\code{\link{create.lats}}}
-\examples{}
+\examples{
+#converting the fdata.list dataset into a matrix of species (rows) 
+#by samples (columns) with abundance data
+data(fdata.list)
+create.matrix(fdata.list, tax.name = "species", locality = "locality", 
+ abund=TRUE, abund.col="abundance")
+
+#same data set, but now for an occurrence matrix
+create.matrix(fdata.list, tax.name = "species", locality = "locality")
+}
 
 \keyword{data}

@@ -1,8 +1,8 @@
 \name{bootstrap}
 \alias{bootstrap}
-\title{Bootstrap species estimators}
+\title{Bootstrap Species Richness Estimator}
 \description{
-  Computes the bootstrap species estimator for abundance or presence-absence data
+  Computes the bootstrap species richness estimator for abundance or presence-absence data
 }
 \usage{
 bootstrap(x, taxa.row = TRUE, abund = TRUE, samples = NA)
@@ -15,13 +15,7 @@ bootstrap(x, taxa.row = TRUE, abund = TRUE, samples = NA)
   included}
 }
 \details{
-  These functions compute the Chao 1 and Chao 2 richness estimators, respectively.
-  Both functions will accept a vector, matrix or data frame of any size made up
-  of positive integers and zeros. Matrices are by default treated such that each
-  row is a different taxon and each column is a sample or locality, however if
-  they are arranged with the taxa as columns, change the argument
-  \code{taxa.row} to FALSE. This funtion is currently under development, and may
-  change with the following release.
+  The bootstrap estimator 
 }
 \value{
   Returns a single value for the Bootstrap Species Estimator
@@ -29,7 +23,7 @@ bootstrap(x, taxa.row = TRUE, abund = TRUE, samples = NA)
 \references{Smith, E.P. & van Belle, G. 1984. Nonparametric estimation of species richness. Biometrics 40, 119-129.}
 \author{Matthew Vavrek}
 
-\seealso{\code{\link{jack1}}}
+\seealso{\code{\link{jack1}}, \code{\link{ACE}}, \code{\link{chao1}}}
 \examples{
 ## sample vector
 a<-c(0,5,1,1,2,0,0,1,0,0,8,45)

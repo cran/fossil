@@ -15,7 +15,6 @@ function(x,taxa.row=TRUE,abund=TRUE) {
   q2 <- length(x[x==2])
   so <- length(x[x>0])
   soj <- so+q1*(2*(m-3)/m)-q2*((m-2)^2/(m*(m-1)))
-  attr(soj,"method") <- "Second Order Jacknife"
   return(soj)
 }
 

@@ -58,9 +58,8 @@ Returns a table with the following column names if \code{abund=FALSE}:
   The original idea for a program similar to this came from the 
   extremely useful EstimateS program by Robert K. Colwell
 
-  Colwell, R. K. 2005. EstimateS: Statistical estimation of species 
-  richness and shared species from samples. Version 7.5. User's Guide and 
-  application published at: http://purl.oclc.org/estimates.
+Colwell, R.K. 2010. EstimateS: Statistical estimation of species richness and shared species from samples. Version 8.2. User's Guide and application published at: http://purl.oclc.org/estimates.
+
 }
 \author{Matthew Vavrek}
 \note{
@@ -74,12 +73,12 @@ Also, in some cases due to the nature of some of the functions, they provide no 
 \seealso{\code{\link{chao1}}, \code{\link{jack1}}, \code{\link{bootstrap}}}
 \examples{
 #abundance example with sample data set
-data(sppexample)
-spp.est(sppexample, abund = TRUE, counter = FALSE)
+data(fdata.mat)
+spp.est(fdata.mat, abund = TRUE, counter = FALSE)
 
 #occurrence example with sample data set
-data(sppexample)
-spp.est(sppexample, abund = FALSE, counter = FALSE)
+data(fdata.mat)
+spp.est(fdata.mat, abund = FALSE, counter = FALSE)
 
 }
 \keyword{datagen}

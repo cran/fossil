@@ -1,8 +1,11 @@
 `lats2Shape` <-
-function(x) { 
-  n<-dim(x)[1]
-a<-data.frame(Id=1:n,X=x[,2],Y=x[,1])    
-  aa<-data.frame(Id=1:n,locality=row.names(as.data.frame(x)),x)
+function(lats) {
+  require(shapefiles)
+  #tests if lats are a matrix or spatial points
+  if (class(lats)=='SpatialPoints') lats<-coordinates(lats)
+  n<-dim(lats)[1]
+  a<-data.frame(Id=1:n,X=lats[,1],Y=lats[,2])    
+  aa<-data.frame(Id=1:n,locality=row.names(as.data.frame(lats)),lats)
   ashp<-convert.to.shapefile(a,aa,"Id",1)
   return(ashp)
 }

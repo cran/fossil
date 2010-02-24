@@ -36,10 +36,10 @@ dino.dist(x, method = "sorenson", type = "dis")
   \code{\link{bray.curtis}}, \code{\link{jaccard}}, \code{\link{morisita.horn}},
   \code{\link{chao.jaccard}} and \code{\link{chao.sorenson}}}
 \examples{
-##example using sppexample
-data(sppexample)
-dino.dist(sppexample)
-dino.dist(sppexample,simpson,"sim")
+##example using fdata.mat
+data(fdata.mat)
+dino.dist(fdata.mat)
+dino.dist(fdata.mat,simpson,"sim")
 
 }
 \keyword{manip}

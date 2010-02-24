@@ -6,7 +6,7 @@ vers <- paste("R package version", meta$Version)
 
 citEntry(entry="Manual",
          title = "fossil: Palaeoecological and Palaeogeographical Analysis Tools",
-         author = personList(as.person("Matthew Vavrek")),
+         author = personList(as.person("Matthew J. Vavrek and Hans C. E. Larsson")),
          year = year,
          note = vers,
 

@@ -26,7 +26,10 @@ Yvonnick Noel, Julien Claude and Emmanuel Paradis with modifications from Matthe
 }
 \seealso{\code{\link{dino.dist}}}
 \examples{
-##add example
+#minimum spanning tree for the fdata set
+data(fdata.mat)
+fdata.dist<-dino.dist(fdata.mat)
+dino.mst<-dino.mst(fdata.dist)
 }
 
 \keyword{datagen}

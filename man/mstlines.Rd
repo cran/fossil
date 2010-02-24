@@ -15,16 +15,17 @@ mstlines(mst, x, y = NULL, pts.names = NULL, ...)
   \item{...}{arguments to be passed to lines()}
 }
 \details{
-  ~~ If necessary, more details than the description above ~~
-}
-\value{
-  Returns a binary matrix where connections between points are denoted by a 1.
-}
-\references{ ~put references to the literature/web site here ~ }
+A function to plot the lines of a minimum spanning tree/forest on a plot; works as a frontend for \code{lines}.}
 \author{Matthew Vavrek}
 \seealso{\code{\link{dino.dist}}}
 \examples{
-##add example
+#plot with overlain MST for fdata dataset
+data(fdata.lats)
+data(fdata.mat)
+fdata.dist<-dino.dist(fdata.mat)
+fdata.mst<-dino.mst(fdata.dist)
+plot(coordinates(fdata.lats))
+mstlines(fdata.mst, coordinates(fdata.lats))
 }
 
 \keyword{datagen}

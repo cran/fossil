@@ -25,9 +25,9 @@ chao.jaccard(x, y)
   in question.
 }
 \references{
-  Chao, A., R. L. Chazdon, et al. (2005). A new statistical approach 
+  Chao, A., R. L. Chazdon, et al. 2005. A new statistical approach 
   for assessing similarity of species composition with incidence and abundance 
-  data. Ecology Letters 8(2): 148-159.
+  data. Ecology Letters 8: 148-159.
 }
 \author{Matthew Vavrek}
 \seealso{\code{\link{bray.curtis}}}

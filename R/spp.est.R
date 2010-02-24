@@ -20,7 +20,7 @@ function(x, rand = 10, abund = TRUE, counter = FALSE)
     cn<-c("N.obs", "S.obs", "S.obs(+95%)", "S.obs(-95%)", "Chao1", "Chao1(upper)", "Chao1(lower)", "ACE", "ACE(upper)", "ACE(lower)", "Jack1", "Jack1(upper)", "Jack1(lower)")
   }
   else {
-    if (vec==TRUE) print('You are using a single sample for an occurrence bassed analysis, which will give invalid results. Please check your data and ensure it is a matrix with multiple samples and multiple species')
+    if (vec==TRUE) print('You are using a single sample for an occurrence based analysis, which will give invalid results. Please check your data and ensure it is a matrix with multiple samples and multiple species')
     x[x>1]<-1
     n<-ncol(x)
     m<-n
@@ -52,8 +52,6 @@ function(x, rand = 10, abund = TRUE, counter = FALSE)
       avg[j,1]<-length(b[b>0])
       for (k in 1:le) avg[j,(k+1)]<-ests[[k]](b)
     }
-print(i)
-print(avg)
     se[,1]<-1:m ##number of samples taken
     se[i,2]<-mean(avg[,1]) ##sobs
     se[i,3]<-se[i,2]+1.96*(sd(avg[,1])) ##sobs + stdev

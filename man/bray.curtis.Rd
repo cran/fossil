@@ -1,20 +1,31 @@
-\name{bray.curtis}
+\name{similarity}
 \alias{bray.curtis}
+\alias{euclidean}
 \alias{jaccard}
 \alias{simpson}
 \alias{sorenson}
+\alias{manhattan}
 \alias{morisita.horn}
-\title{Similarity Indices}
+\alias{ochiai}
+\alias{kulczynski}
+\alias{braun.blanquet}
+\title{Similarity/Dissimilarity Indices}
 \description{
-  Functions to calculate the similarities between two groups
+  Functions to calculate the ecological distance between two groups
 }
 \usage{
+braun.blanquet(x, y)
 bray.curtis(x, y)
+euclidean(x,y)
+kulczynski(x,y)
 jaccard(x, y)
+manhattan(x, y)
 morisita.horn(x, y)
+ochiai(x, y)
 simpson(x, y)
 sorenson(x, y)
-}
+}
+
 \arguments{
   \item{x}{species from group A}
   \item{y}{species from group B}
@@ -23,13 +34,18 @@ sorenson(x, y)
   You must provide two separate vectors, with species arranged in the same 
   order, from area A and B. If species are present in one site but not the 
   other, these must be recorded for both sites; the site where they are not 
-  found should be coded as a zero. Species not present at either site are 
-  ignored. For details on each index, please consult the references.
+  found should be coded as a zero. For details on each index, please consult the references.
 }
 \value{
   Returns the similarity index for the two sites in question. 
 }
-\references{Magurran, A. E. (2004). Measuring Biological Diversity. Oxford, Blackwell.}
+\references{
+
+Shi, G. R. 1993. Multivariate data analysis in palaeoecology and palaeobiogeography -- a review. Palaeogeography, Palaeoclimatology, Palaeoecology 105: 199--234.
+
+Magurran, A. E. 2004. Measuring Biological Diversity. Oxford, Blackwell.
+
+}
 \author{Matthew Vavrek}
 
 \seealso{\code{\link{dino.dist}}}

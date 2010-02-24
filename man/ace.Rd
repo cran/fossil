@@ -1,4 +1,4 @@
-\name{ace}
+\name{ACE}
 \alias{ACE}
 \alias{ICE}
 \title{Abundance- and Incidence-based Coverage Estimators}

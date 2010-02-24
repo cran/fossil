@@ -30,7 +30,6 @@ function (x, random.start = TRUE, random.search = TRUE) {
         ntree <- c(1:n)[-tree]
     }
     dimnames(N) <- dimnames(X)
-    class(N) <- "mst"
     return(N)
 }
 

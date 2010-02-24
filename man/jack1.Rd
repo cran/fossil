@@ -24,12 +24,12 @@ jack2(x, taxa.row = TRUE, abund = TRUE)
   default treated such that each row is a different taxon and each column is a
   sample or locality, however if they are arranged with the taxa as columns,
   change the argument \code{taxa.row} to FALSE. If the data is abundance based,
-  \code{abund} should be set to TRUE. If \code{abund} is et to FALSE, the data
-  will be converted to presence absence if not already in that format. For
+  \code{abund} should be set to TRUE. If \code{abund} is set to FALSE, the data
+  will be converted to presence/absence if not already in that format. For
   single vectors/columns, \code{taxa.row} and \code{abund} are ignored.
 }
 \value{
-  The value returned is the estimated species diversity of the dataset in question.
+  The value returned is the Jackknife estimated species diversity of the dataset in question.
 }
 \references{Burnham, K.P. & W.S. Overton. 1978. Estimation of the size of a closed population when capture probabilities vary among animals. Biometrika 65, 623-633.
 

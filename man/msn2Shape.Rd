@@ -6,11 +6,11 @@
   format. 
 }
 \usage{
-msn2Shape(msn, lat, dist = NULL)
+msn2Shape(msn, lats, dist = NULL)
 }
 \arguments{
   \item{msn}{a minimum spanning tree or network (binary matrix)}
-  \item{lat}{a matrix or data frame with the latitude and longitude of the 
+  \item{lats}{a matrix or data frame with the latitude and longitude of the 
   sites as the first two columns respectively}
   \item{dist}{Optional argument to include distance values in final output; if 
   wanted, a distance matrix (lower triangle) with the localities in the same 
@@ -28,12 +28,19 @@ msn2Shape(msn, lat, dist = NULL)
   A shapefile which can be output using the \code{write.shapefile} function for
   use with a GIS program.
 }
-\references{ ~put references to the literature/web site here ~ }
 \author{Matthew Vavrek}
 \seealso{\code{\link{lats2Shape}} for a function to convert a lat/long table to 
   a shapefile}
 \examples{
-##add example for this function
+\dontrun{
+#import both fdata.lats and fdata.mat
+data(fdata.lats)
+data(fdata.mat)
+fdata.dist<-dino.dist(fdata.mat)
+fdata.mst<-dino.mst(fdata.dist)
+shape.mst<-msn2Shape(fdata.mst, fdata.lats)
+write.shapefile(shape.mst, file='/path/to/write/mst')
+}
 }
 \keyword{datagen}
 

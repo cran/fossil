@@ -12,13 +12,5 @@ A set of analytical tools useful in analysing ecological and geographical data s
 \author{
 Matthew Vavrek <matthew@matthewvavrek.com>
 }
-\references{
-
-}
-
 \keyword{ package }
-\seealso{
-}
-\examples{
 
-}

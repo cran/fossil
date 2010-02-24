@@ -12,7 +12,6 @@ q1<- length(x[x==1])
 m <- sum(x)
 so <- length(x[x>0])
 foj <- so+q1*((m-1)/m)
-attr(foj,"method") <- "First Order Jacknife"
 return(foj)
 }
 

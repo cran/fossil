@@ -19,7 +19,8 @@ chao.sd(x)
   returns a value for standard deviation for \code{chao1} or \code{chao2}
 }
 \references{
-  }
+Colwell, R.K. 2010. EstimateS: Statistical estimation of species richness and shared species from samples. Version 8.2. User's Guide and application published at: http://purl.oclc.org/estimates.
+}
 \author{Matthew Vavrek}
 \seealso{\code{\link{chao1}}, \code{\link{spp.est}}}
 \examples{

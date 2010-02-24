@@ -42,7 +42,6 @@ ntree<-c(1:n)[-tree]
 		N[i,][X[i,]==m]<-1
   }
 dimnames(N) <- dimnames(X)
-  class(N) <- "msn"
 return(N)
 }
 

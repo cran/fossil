@@ -6,30 +6,24 @@
   what points form the vertices.
 }
 \usage{
-earth.poly(x, plot.map = FALSE, ...)
+earth.poly(lats)
 }
 
 \arguments{
-\item{x}{a table with a latitude and longitude column respectively as the first two columns}
-\item{plot.map}{A logical argument whether to plot the points on a map; default is FALSE} 
-\item{\dots}{plotting arguments to be passed to the map plotting function; will be ignored if \code{plot.map}=FALSE}
+\item{lats}{a table with a longitude and latitude column respectively as the first two columns, or a SpatialPoints object with longitude/latitude}
 }
 \details{
-  This function will plot a minimum convex polygon for a spherical surface (ie points on a globe)
+  This function will calculate the area of a minimum convex polygon/convex hull for a spherical surface (ie points on a globe).
 }
 \value{
-  ~Describe the value returned
-  If it is a LIST, use
-  \item{comp1 }{Description of 'comp1'}
-  \item{comp2 }{Description of 'comp2'}
-  ...
+The function will return a list consisting of the area in $km^2$ (\code{\$area}) and a vector with the row numbers of the vertices (\code{\$vertices})
 }
-\references{ ~put references to the literature/web site here ~ }
 \author{Matthew Vavrek}
-\note{}
 \seealso{\code{\link{earth.tri}}}
 \examples{
-##add example
+#1/8th the surface area of the earth
+a <- matrix(c(0, 0, 0, 90, 90, 0, 25, 25), 4, 2, byrow = TRUE)
+earth.poly(a)
 }
 
 \keyword{graphs}
