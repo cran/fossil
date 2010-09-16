@@ -8,7 +8,7 @@
 earth.dist(lats, dist = TRUE)
 }
 \arguments{
-  \item{lats}{a table with a latitude and longitude column respectively as the 
+  \item{lats}{a table with a longitude and latitude column respectively as the 
   first two columns}
   \item{dist}{A logical argument whether to create a distance matrix (lower 
   triangle) or full matrix}
@@ -19,8 +19,8 @@ earth.dist(lats, dist = TRUE)
   must be in decimal degrees.
 }
 \value{
-  Returns a matrix of distances in kilometers between a list of latitudes and 
-  longitudes.
+  Returns a matrix of distances in kilometers between a list of longitudes and 
+  latitudes.
 }
 \author{Matthew Vavrek}
 \note{

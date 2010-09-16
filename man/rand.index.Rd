@@ -1,11 +1,13 @@
 \name{rand.index}
 \alias{rand.index}
-\title{Rand Index}
+\alias{adj.rand.index}
+\title{Rand Index and Adjusted Rand Index}
 \description{
-  The Rand Index to compare the similarity of two data clustering outcomes
+  Measures to compare the similarity of two clustering outcomes
 }
 \usage{
 rand.index(group1, group2)
+adj.rand.index(group1, group2)
 }
 \arguments{
   \item{group1}{first cluster identity matrix}
@@ -14,13 +16,15 @@ rand.index(group1, group2)
 \details{
 This function calculates the Rand Index for two different clustering outcomes. The Rand Index gives a value between 0 and 1, where 1 means the two clustering outcomes match identicaly. 
 
-This function can be used with unequal numbers of clusters, however the appropriateness of this has not been explored.
+The Adjusted Rand Index rescales the index, taking into account that random chance will cause some objects to occupy the same clusters, so the Rand Index will never actually be zero.
 }
 \value{
 a single value between 0 and 1
 }
 \references{
-  Rand, W.M. (1971) Objective criteria for the evaluation of clustering methods. Journal of the American Statistical Association 66: 846--850.
+  Rand, W.M. 1971. Objective criteria for the evaluation of clustering methods. Journal of the American Statistical Association 66: 846--850.
+  
+  Hubert, L. and Arabie, P. 1985. Comparing partitions. Journal of Classification. 2: 193--218.
 }
 \author{Matthew Vavrek}
 

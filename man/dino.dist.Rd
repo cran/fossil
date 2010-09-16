@@ -1,11 +1,13 @@
-\name{dino.dist}
+\name{ecol.dist}
+\alias{ecol.dist}
 \alias{dino.dist}
 \title{Creating a Distance Matrix}
 \description{
   Create a distance matrix between any number of locations
 }
 \usage{
-dino.dist(x, method = "sorenson", type = "dis")
+ecol.dist(x, method = sorenson, type = "dis")
+dino.dist(x, method = sorenson, type = "dis")
 }
 \arguments{
   \item{x}{matrix of taxa (or equivalent data) in rows by columns of localities 
@@ -20,6 +22,8 @@ dino.dist(x, method = "sorenson", type = "dis")
   \code{\link{chao.jaccard}} and \code{\link{chao.sorenson}}. Creating a 
   distance matrix will give a value of 1 for the most distantly related sites, 
   while similarity index will give a value of 1 for the most similar sites.
+  
+  \code{dino.dist} is an old name for the function, and is in the process of being deprecated.
 }
 \value{
   A distance matrix (lower triangle) giving the pairwise distance indices 
@@ -38,8 +42,8 @@ dino.dist(x, method = "sorenson", type = "dis")
 \examples{
 ##example using fdata.mat
 data(fdata.mat)
-dino.dist(fdata.mat)
-dino.dist(fdata.mat,simpson,"sim")
+ecol.dist(fdata.mat)
+ecol.dist(fdata.mat,simpson,"sim")
 
 }
 \keyword{manip}

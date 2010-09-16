@@ -9,7 +9,7 @@
 loc.map(x, ...)
 }
 \arguments{
-  \item{x}{a table with a latitude and longitude column respectively with 
+  \item{x}{a table with a longitude and latitude column respectively with 
   optional associated attributes}
   \item{\dots}{arguments to be passed to the \code{plot} call}
 }
@@ -21,7 +21,6 @@ loc.map(x, ...)
 \value{
  Plots a map of the world focused on the locations provided.
 }
-\references{ ~put references to the literature/web site here ~ }
 \author{Matthew Vavrek}
 \seealso{\code{\link{msn.map}}}
 \examples{
