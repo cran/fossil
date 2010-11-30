@@ -24,7 +24,10 @@ loc.map(x, ...)
 \author{Matthew Vavrek}
 \seealso{\code{\link{msn.map}}}
 \examples{
-##add examples
+#plotting the fdata sample set
+data(fdata.lats)
+loc.map(fdata.lats)
+
 }
 
 \keyword{graphs}

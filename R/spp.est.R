@@ -1,10 +1,10 @@
 'spp.est' <-
-function(x, rand = 10, abund = TRUE, counter = FALSE)
+function(x, rand = 10, abund = TRUE, counter = FALSE, max.est = 'all')
 {
-#to mark off it it is a single vector or a matrix
+  #to mark off it it is a single vector or a matrix
   if (ncol(as.matrix(x))==1) vec<-TRUE
   else vec<-FALSE
-#first we separate out if it is abundance or occurrence based that we're running
+  #first we separate out if it is abundance or occurrence based that we're running
   if (abund==TRUE) {
     if (max(x)==1) warning("cannot use incidence data for abundance-based analyses. If the data is incidence based, please run this function again with the option of 'abund=FALSE'")
     if (vec==TRUE) {
@@ -15,25 +15,25 @@ function(x, rand = 10, abund = TRUE, counter = FALSE)
       n<-ncol(x)
       m<-n
     }
-#we use the abundance based versions of Chao's species estimators if the matrix is abundance based
+    #we use the abundance based versions of Chao's species estimators if the matrix is abundance based
     ests<-list(chao1,chao.sd,ACE,jack1)
     cn<-c("N.obs", "S.obs", "S.obs(+95%)", "S.obs(-95%)", "Chao1", "Chao1(upper)", "Chao1(lower)", "ACE", "ACE(upper)", "ACE(lower)", "Jack1", "Jack1(upper)", "Jack1(lower)")
   }
   else {
-    if (vec==TRUE) print('You are using a single sample for an occurrence based analysis, which will give invalid results. Please check your data and ensure it is a matrix with multiple samples and multiple species')
+    if (vec==TRUE) warning('You are using a single sample for an occurrence based analysis, which will give invalid results. Please check your data and ensure it is a matrix with multiple samples and multiple species')
     x[x>1]<-1
     n<-ncol(x)
     m<-n
-#these are the incidence/occurrence based estimators we use
+    #these are the incidence/occurrence based estimators we use
     ests<-list(chao2,chao.sd,ICE,jack1)
     cn<- c("# Samples", "S.obs", "S.obs(+95%)", "S.obs(-95%)", "Chao2", "Chao2(upper)", "Chao2(lower)", "ICE", "ICE(lower)", "ICE(lower)", "Jack1", "Jack1(lupper)", "Jack1(lower)")
   }
-  
-##se is final output table with all the values returned, with a dimension of 13 (the various estimators) by m, the number of samples we can resample (ie typically the number of localities)
+  if (max.est != 'all') m <- max.est
+  ##se is final output table with all the values returned, with a dimension of 13 (the various estimators) by m, the number of samples we can resample (ie typically the number of localities)
   se<-matrix(,m,13)
   se[,1] <- 1:m ##number of samples taken
   le<-length(ests)
-##if x is a abundance vector, this creates a single vector to sample of length==sum(x)
+  ##if x is a abundance vector, this creates a single vector to sample of length==sum(x)
   if (abund==TRUE & vec==TRUE) ss<-rep(1:n,x)
   else ss<-1:n
   for (i in 1:m) {

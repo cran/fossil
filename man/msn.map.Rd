@@ -19,10 +19,10 @@ This is a helper function for quick visualization of georeferenced minimum spann
 \value{
 Returns a map of the globe, focused in on any set of georeferenced localities.
 }
-\references{ ~put references to the literature/web site here ~ }
 \author{Matthew Vavrek}
 \seealso{\code{\link{dino.msn}}}
 \examples{
 ##add examples
+
 }
 \keyword{graphs}

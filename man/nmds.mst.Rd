@@ -20,12 +20,17 @@ At the moment, the function requires an NMDS created using the ecodist program, 
   Plots a non-metric multidimensional scaling plot with an overlain minimum 
   spanning tree showing connections between the points.
 }
-\references{ ~put references to the literature/web site here ~ }
 \author{Matthew Vavrek}
 \seealso{\code{\link{dino.msn}}, \code{\link{dino.mst}}}
 \examples{
-##add examples
-
+\dontrun{
+#use fdata.mat as dataset, and use the \code{ecodist} package for the \code{nmds()} function
+data(fdata.mat)
+z <- ecol.dist(fdata.mat)
+a <- dino.msn(z)
+b <- nmds(z)
+nmds.mst(b, a)
+}
 }
 
 \keyword{graphs}

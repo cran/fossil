@@ -6,7 +6,7 @@
   estimators.
 }
 \usage{
-spp.est(x, rand = 10, abund = TRUE, counter = FALSE)
+spp.est(x, rand = 10, abund = TRUE, counter = FALSE, max.est = 'all')
 }
 \arguments{
   \item{x}{A vector, matrix or data frame with species as rows and 
@@ -16,6 +16,7 @@ spp.est(x, rand = 10, abund = TRUE, counter = FALSE)
   \item{abund}{If the data is abundance or presence/absence; default is set to 
   TRUE for abundance}
   \item{counter}{Whether or not to provide a running total of progress of randomizations}
+  \item{max.est}{The value to go up to for the analysis; default is set to the same as the total number of samples}
 }
 \details{
   This function will accept a vector, matrix or data frame of species by samples 

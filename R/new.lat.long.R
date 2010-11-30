@@ -1,5 +1,5 @@
 `new.lat.long` <-
-function(lat,long,bearing,distance) {
+function(long,lat,bearing,distance) {
   rad <- pi/180
   a1<-lat*rad
   a2<-long*rad
