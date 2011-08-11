@@ -2,13 +2,12 @@
 function(x, tax.name="genus", locality="locality", time.col=NULL, time=NULL, abund=FALSE, abund.col="abundance")
 {
 if (is.null(time.col)==FALSE & is.null(time)==FALSE) x<-x[which(x[,time.col]==time),]
-a<-tax.name
-nr<-length(levels(x[,a]))
-rn<-levels(x[,a])
+a <- tax.name
+nr <- length(levels(as.factor(x[,a])))
+rn <- levels(as.factor(x[,a]))
 z <- locality
-d<-factor(x[,z])
-nc<-length(levels(d))
-cn<-levels(d)
+cn <- levels(as.factor(x[,z]))
+nc <- length(cn)
 nm<-matrix(0,nr,nc,dimnames=list(rn,cn))
 for (i in 1:length(x[,1])) {
   m<-as.character(x[i,a])

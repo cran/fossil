@@ -3,8 +3,8 @@ function(groups, dist) {
   c <- length(table(groups))
   dist <- as.matrix(dist)
   #averages table
-  atab <- matrix(,1000, c)
-  for (i in 1:1000) {
+  atab <- matrix(,10000, c)
+  for (i in 1:10000) {
     ng <- sample(groups)
     for (j in 1:c) {
       #for the resampled groups, which equal this 'j'

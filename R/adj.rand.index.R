@@ -12,7 +12,7 @@ function(group1, group2) {
   sumai <- sum(choose(colSums(ctab), 2))
   sumbj <- sum(choose(rowSums(ctab), 2))
   Ntwo <- choose(N, 2)
-  ari <- (sumnij - (sumai*sumbj)/Ntwo)/(0.5*(sumai+sumbj)-(sumai*sumbj)/Ntwo)
+  ari <- abs((sumnij - (sumai*sumbj)/Ntwo)/(0.5*(sumai+sumbj)-(sumai*sumbj)/Ntwo))
   return(ari)
 }
 

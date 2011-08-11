@@ -1,19 +1,13 @@
 citHeader("To cite package 'fossil' in publications use:")
 
-desc <- packageDescription("fossil")
-year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
-vers <- paste("R package version", meta$Version)
-
-citEntry(entry="Manual",
-         title = "fossil: Palaeoecological and Palaeogeographical Analysis Tools",
-         author = personList(as.person("Matthew J. Vavrek and Hans C. E. Larsson")),
-         year = year,
-         note = vers,
-
-         textVersion =
-         paste("Matthew Vavrek (",
-               year,
-               "). fossil: Palaeoecological and Palaeogeographical Analysis Tools. ",
-               vers, ".", sep=""))
-
+citEntry(entry="Article",
+    title = "fossil: palaeoecological and palaeogeographical analysis tools",
+    author = "Matthew J. Vavrek",
+    year = 2011,
+    journal = "Palaeontologia Electronica",
+    volume = "14",
+    pages = "1T",
+    number = "1",
+    note = "R package version 0.3.0",
+    textVersion = paste("Vavrek, Matthew J. 2011. fossil: palaeoecological and palaeogeographical analysis tools. Palaeontologia Electronica, 14:1T. http://palaeo-electronica.org/2011_1/238/index.html", sep=""))
 

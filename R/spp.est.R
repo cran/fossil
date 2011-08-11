@@ -28,7 +28,7 @@ function(x, rand = 10, abund = TRUE, counter = FALSE, max.est = 'all')
     ests<-list(chao2,chao.sd,ICE,jack1)
     cn<- c("# Samples", "S.obs", "S.obs(+95%)", "S.obs(-95%)", "Chao2", "Chao2(upper)", "Chao2(lower)", "ICE", "ICE(lower)", "ICE(lower)", "Jack1", "Jack1(lupper)", "Jack1(lower)")
   }
-  if (max.est != 'all') m <- max.est
+  if (max.est != 'all' && max.est < m) m <- max.est
   ##se is final output table with all the values returned, with a dimension of 13 (the various estimators) by m, the number of samples we can resample (ie typically the number of localities)
   se<-matrix(,m,13)
   se[,1] <- 1:m ##number of samples taken
