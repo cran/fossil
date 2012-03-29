@@ -1,12 +1,11 @@
 Package: fossil
 Type: Package
 Title: Palaeoecological and Palaeogeographical Analysis Tools
-Version: 0.3.5
-Date: 2011-08-11
+Version: 0.3.7
+Date: 2012-03-29
 Author: Matthew J. Vavrek <matthew@matthewvavrek.com>
 Maintainer: Matthew J. Vavrek <matthew@matthewvavrek.com>
-Depends: sp, maps
-Suggests: shapefiles
+Depends: sp, maps, shapefiles
 Description: A set of analytical tools useful in analysing ecological
         and geographical data sets, both ancient and modern. The
         package includes functions for estimating species richness
@@ -15,6 +14,6 @@ Description: A set of analytical tools useful in analysing ecological
         areas.
 License: GPL (>= 2)
 URL: http://matthewvavrek.com/programs-and-code/fossil/
-Packaged: 2011-08-17 01:29:07 UTC; matthew
+Packaged: 2012-03-30 06:18:50 UTC; matthew
 Repository: CRAN
-Date/Publication: 2011-08-17 05:30:27
+Date/Publication: 2012-03-30 07:54:11

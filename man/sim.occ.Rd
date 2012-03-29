@@ -5,7 +5,7 @@
   A function to simulate a species occurrence data set
 }
 \usage{
-sim.occ(total.species = 100, endemics = 0.1, regions = 3, locs = 30, avg.abund = 100)
+sim.occ(total.species = 100, endemics = 0.1, regions = 3, locs = 30, avg.abund = 1)
 }
 \arguments{
   \item{total.species}{The total number of species in the region (i.e. the number of rows in the result matrix)}

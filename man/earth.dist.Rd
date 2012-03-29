@@ -22,7 +22,7 @@ earth.dist(lats, dist = TRUE)
   Returns a matrix of distances in kilometers between a list of longitudes and 
   latitudes.
 }
-\author{Matthew Vavrek}
+\author{Matthew Vavrek, with suggestions from Anton Korobeynikovs}
 \note{
   Large datasets may take some time to process, as the number of distances 
   to calculate is factorial in nature.

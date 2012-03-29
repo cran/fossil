@@ -1,7 +1,9 @@
-a62342f331cc0c22339763baa68985a2 *DESCRIPTION
+2c536d112a71f12370226270d8a62653 *DESCRIPTION
+6d20291ccb3036dd69c5177e4a7b7019 *NAMESPACE
 1f95c8c4e9c86a8a70ff7aac4e78c0a0 *R/ACE.R
 f87ff0d109817a4f68256f312c828a88 *R/ICE.R
 e483a9ebec0e239cd7ae2fccb3d1198e *R/adj.rand.index.R
+344f19250cae9b79ebc0248bb4654153 *R/aic.nest.R
 520ab85bbe4e49615fdcb63c5966425c *R/bootstrap.R
 a054eb485c84917b46c1b48eb51349ef *R/braun.blanquet.R
 49dfe0538846381cf023969d76f3c425 *R/bray.curtis.R
@@ -18,7 +20,7 @@ c35035fb776c7829966769dd71294c3c *R/create.matrix.R
 f8fac440a6125ba8a317258dcdec280e *R/dino.msn.R
 0970f8608b7bfa47922cc78cfb0cad7c *R/dino.mst.R
 9fbf0be30578272a099d5404d827bec2 *R/earth.bear.R
-b2b62466904cb7cd8d4d5cfbb02fc016 *R/earth.dist.R
+4ace91c4653d2aac9ce7e39854673b78 *R/earth.dist.R
 39b5bbdcb2a4e07658b7d50d6f6254d3 *R/earth.poly.R
 b93d3ea98d407c745efb16c1847dae06 *R/earth.tri.R
 37d55862aa9c2578f17f5a2ec9aa0461 *R/ecol.dist.R
@@ -46,7 +48,7 @@ fe6393b5c66a93d2d0aaf52997011510 *R/rclust.null.R
 30b6d5713bdc0c63ce334416b7668dcd *R/rclust.weights.R
 1fe7482fa94428d6db45f14e593ec965 *R/relational.clustering.R
 73530ea426310090b91a47a067d6df01 *R/sac.R
-7b7d765458d44e5c50ebf36808fc6016 *R/sim.occ.R
+2e88c42934805809d183906bc6c750bd *R/sim.occ.R
 37205f4233396e11b09e8199078fd565 *R/simpson.R
 87ed768af035e1e949bae0b9d8204213 *R/sorenson.R
 5fb522a0285aaad7d8b32086fed8dc12 *R/spp.est.R
@@ -56,6 +58,7 @@ d9b2a6017c98c9ee9180b724cb3edd10 *R/tri.ineq.R
 98eeba71aa776517492e7a90b6076ceb *data/fdata.mat.rda
 bd9849756fae7c06aa852dd0c4ac21be *inst/CITATION
 1e9769cc388c72c0c29e3f3a245218bc *man/ace.Rd
+f60b10d76d4a874cd7681cac643f2dfa *man/aic.nest.Rd
 aaae04bc43b5e410aae8007c2029a258 *man/bootstrap.Rd
 ec9a67ba1d67bad43ac1932be185c32a *man/bray.curtis.Rd
 b3e8b2c3dd06a1522fb4ba7f52c95e89 *man/chao.sd.rd
@@ -68,7 +71,7 @@ f9a0b59ab83f281e2e9826a0b94ed049 *man/create.matrix.Rd
 58104a0383960429ed1d7b12c48f2851 *man/dino.dist.Rd
 d3e988409c73979c6e85a40485ca83bb *man/dino.mst.Rd
 b15f51062a9a17bb34f1001b6e21a8e2 *man/earth.bear.Rd
-efc806af88991ee1da3f94c30a28ac58 *man/earth.dist.Rd
+c0ea5c3f2d65b95d8366fb3378cd6334 *man/earth.dist.Rd
 ef78a5c5b7bb8d23667bca4a22e13226 *man/earth.poly.Rd
 1d16038f372004ad1129b0b679e84498 *man/earth.tri.Rd
 30a0c960c5a176ae39be6d1f5b904d5e *man/fdata.Rd
@@ -90,6 +93,6 @@ d196a381205a382c65d067612470215d *man/rclust.null.Rd
 b4008f81bc8582d80ef3ce721a77ab85 *man/rclust.weights.Rd
 c251d3377a3430dadc2e29290c165482 *man/relational.clustering.Rd
 4d535efbb8aa951d46865db189620480 *man/sac.Rd
-8f7306e7132da4193a8b7cc160127bfd *man/sim.occ.Rd
+9b082a7304c227718ce6243a7e4cff26 *man/sim.occ.Rd
 cc4521215807021f182c3dd9e568c1ad *man/spp.est.Rd
 cc1aeb43582703d525288ab75539e99d *man/tri.ineq.Rd
