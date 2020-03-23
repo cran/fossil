@@ -5,7 +5,7 @@
   A method to cluster a number of samples using a relational (dissimila
 }
 \usage{
-rclust(dist, clusters = 2, runs = 1000, counter = FALSE)
+rclust(dist, clusters = 2, runs = 10, counter = FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

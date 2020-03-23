@@ -1,6 +1,6 @@
 `loc.map` <-
 function(x,...) { 
-  if (class(x)=='SpatialPoints') x<-coordinates(x)
+  if (inherits(x, 'SpatialPoints')) x<-coordinates(x)
   xa <- min(x[,1])
   xb <- max(x[,1])
   if ((xb-xa)<(360-(xb-xa))) {

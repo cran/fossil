@@ -1,7 +1,7 @@
 `earth.poly` <-
 function(lats) {
     #tests if lats are a matrix or spatial points
-    if (class(lats)=='SpatialPoints') lats<-coordinates(lats)
+    if (inherits(lats, 'SpatialPoints')) lats<-coordinates(lats)
     lats<-unique(lats)
     rownames.lats<-rownames(lats)
     nr <- nrow(lats)

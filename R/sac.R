@@ -1,7 +1,7 @@
 `sac` <-
 function(lats,spp) {
   #tests if lats are a matrix or spatial points
-  if (class(lats)=='SpatialPoints') lats<-coordinates(lats)
+  if (inherits(lats, 'SpatialPoints')) lats<-coordinates(lats)
   #find a centroid; not necessarily the true centre, but an approximation
   tcn <- c(mean(lats[,1]), mean(lats[,2]))
   numlocs <- length(lats[,1])

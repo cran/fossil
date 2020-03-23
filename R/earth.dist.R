@@ -1,7 +1,7 @@
 `earth.dist` <-
 function(lats, dist = TRUE) {
   #tests if lats are a matrix or spatial points
-  if (class(lats)=='SpatialPoints') lats<-coordinates(lats)
+  if (inherits(lats, 'SpatialPoints')) lats<-coordinates(lats)
   name <- list(rownames(lats),rownames(lats))
   n <- nrow(lats)
   z <- matrix(0,n,n,dimnames=name)

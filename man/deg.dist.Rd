@@ -5,7 +5,12 @@
   Haversine formula to calculate distances between points on the earth
 }
 \usage{
-deg.dist(long1, lat1, long2, lat2)
+deg.dist(
+	long1, 
+	lat1, 
+	long2, 
+	lat2
+)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

@@ -8,6 +8,6 @@ citEntry(entry="Article",
     volume = "14",
     pages = "1T",
     number = "1",
-    note = "R package version 0.3.0",
+    note = "R package version 0.4.0",
     textVersion = paste("Vavrek, Matthew J. 2011. fossil: palaeoecological and palaeogeographical analysis tools. Palaeontologia Electronica, 14:1T. http://palaeo-electronica.org/2011_1/238/index.html", sep=""))
 

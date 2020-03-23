@@ -2,7 +2,7 @@
 \alias{rclust.dist}
 \title{Relational Clustering}
 \description{
-  A method to cluster a number of samples using a relational (dissimila
+  Provides a distance matrix intra- and inter-group average distances based on a clustering solution and a dissimilarity matrix. 
 }
 \usage{
 rclust.dist(groups, dist)

@@ -1,5 +1,5 @@
 `rclust` <- 
-function(dist, clusters = 2, runs = 1000, counter = FALSE) { 
+function(dist, clusters = 2, runs = 10, counter = FALSE) { 
   if (runs == 1) return(relational.clustering(dist, clusters))
   else {
     rc2return <- NULL
@@ -13,15 +13,10 @@ function(dist, clusters = 2, runs = 1000, counter = FALSE) {
       nd <- as.matrix(dist)
       n<-dim(nd)[1]
       nd[upper.tri(nd, diag = TRUE)] <- 0
-      outer <- NULL
-      inner <- NULL
       inout <- matrix(0,n,n)
-      for (i in 1:(n-1)) {
-        for (j in (i+1):n) {
-          if (npart[i] != npart[j]) inout[j,i] <- 1
-        }
-      }
-      sumin <- sum(nd[which(inout==0)])
+      inout <- outer(1:n, 1:n, function(i, j) npart[i]!=npart[j])
+      inout<-as.matrix(as.dist(inout))
+      sumin <- sum(nd[which(inout==1)])
       sumn<-sum(1:(n-1))
       np <- sumin/(sumn-sum(inout)) 
       if (np < rc2) {

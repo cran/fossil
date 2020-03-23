@@ -2,7 +2,7 @@
 \alias{rclust.null}
 \title{Relational Clustering}
 \description{
-  A method to cluster a number of samples using a relational (dissimila
+  A Monte Carlo method for calculating a null/random clustering solution based on the type and arrangement of a known clustering solution.
 }
 \usage{
 rclust.null(groups, dist)

@@ -16,5 +16,7 @@ function(groups, dist) {
   rtmat <- matrix(,c,2)
   for (i in 1:c) rtmat[i,1] <- mean(atab[,i])
   for (i in 1:c) rtmat[i,2] <- sd(atab[,i])
+  colnames(rtmat)<-c('mean', 'sd')
+  rownames(rtmat)<-levels(as.factor(groups))
   return(rtmat)
 }

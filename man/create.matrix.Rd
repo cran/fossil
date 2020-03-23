@@ -5,8 +5,15 @@
   Create a matrix with taxa as rows and occurrences or samples as columns
 }
 \usage{
-  create.matrix(x,tax.name="genus",locality="locality",time.col=NULL,time=NULL,abund=FALSE,abund.col="abundance")
-
+  create.matrix(
+  x,
+  tax.name="genus",
+  locality="locality",
+  time.col=NULL,
+  time=NULL, 
+  abund=FALSE,
+  abund.col="abundance"
+)
 }
 \arguments{
   \item{x}{a table arranged in columnar format, with at least one column
@@ -44,11 +51,11 @@ At present, the function will ignore rows where the taxon name is \code{NA}, \co
 #converting the fdata.list dataset into a matrix of species (rows) 
 #by samples (columns) with abundance data
 data(fdata.list)
-create.matrix(fdata.list, tax.name = "species", locality = "locality", 
- abund=TRUE, abund.col="abundance")
+create.matrix(fdata.list, tax.name = "species", abund=TRUE)
 
 #same data set, but now for an occurrence matrix
 create.matrix(fdata.list, tax.name = "species", locality = "locality")
-}
+
+}
 
 \keyword{data}

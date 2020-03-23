@@ -1,8 +1,7 @@
 `msn2Shape` <-
 function(msn,lats,dist=NULL) {
-    require(shapefiles)
     #tests if lats are a matrix or spatial points
-    if (class(lats)=='SpatialPoints') lats<-coordinates(lats)
+    if (inherits(lats, 'SpatialPoints')) lats<-coordinates(lats)
     dis <- is.null(dist)
     n <- dim(msn)[1]
     nm <- matrix(0, n, n)
